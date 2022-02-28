@@ -1,6 +1,8 @@
 #pragma once
 
-#include <app/ParamWidget.hpp>
+#include "rack.hpp"
+
+using namespace rack;
 
 // Square light used in the TRS meter module
 template <typename TBase>
@@ -59,20 +61,20 @@ struct RGBTriangle : ModuleLightWidget {
 };
 
 
-struct ViaSifamBlack : RoundKnob {
-    ViaSifamBlack() {
+struct SifamBlack : RoundKnob {
+    SifamBlack() {
         setSvg(APP->window->loadSvg(asset::plugin(pluginInstance, "res/starling-rack-gfx/knob-sifam-blkcap.svg")));
     }
 };
 
-struct ViaSifamGrey : RoundKnob {
-    ViaSifamGrey() {
+struct SifamGrey : RoundKnob {
+    SifamGrey() {
         setSvg(APP->window->loadSvg(asset::plugin(pluginInstance, "res/starling-rack-gfx/knob-sifam-grycap.svg")));
     }
 };
 
-struct ViaJack : SvgPort {
-    ViaJack() {
+struct HexJack : SvgPort {
+    HexJack() {
         setSvg(APP->window->loadSvg(asset::plugin(pluginInstance, "res/starling-rack-gfx/jack-nogradients.svg")));
     }
 };
