@@ -87,7 +87,7 @@ struct TransparentButton : SvgSwitch {
     TransparentButton() {
         momentary = true;
         shadow->opacity = 0.0;
-        addFrame(APP->window->loadSvg(asset::plugin(pluginInstance, "res/starling-rack-gfx/transparent_button.svg")));
+        addFrame(APP->window->loadSvg(asset::plugin(pluginInstance, "res/starling-rack-gfx/transparent-button.svg")));
     }
 };
 
